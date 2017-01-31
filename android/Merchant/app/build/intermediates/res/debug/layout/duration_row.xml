@@ -1,0 +1,14 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingLeft="3dp"
+    android:paddingTop="5dp"
+    android:text="TextView"
+    android:textColor="@color/Black"
+    android:textSize="13sp"
+    android:singleLine="true"
+    android:textStyle="bold" />
+
+<!-- From: file:/Users/vipinjoshi/Documents/git_hub/ss-apps/android/Merchant/app/src/main/res/layout/duration_row.xml -->

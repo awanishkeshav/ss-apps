@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Font colors -->
+    <color name="Transparent">#00000000</color>
+    <color name="HoverTransparentBlack">#22000000</color>
+    <color name="SemiTransparent">#aa000000</color>
+    <color name="Black">#000000</color>
+    <color name="White">#ffffff</color>
+    <color name="LtstGrey">#f5f5f5</color>
+    <color name="DarkGrey">#1f1f1f</color>
+    <color name="TintBlue">#459FCF</color>
+    <color name="LiteGray">#999999</color>
+    <color name="dark_greyText">#444444</color>
+    <color name="seperator">#c7c7c7</color>
+    
+    <color name="greyText">#545455</color>
+
+    <!-- Activities -->
+
+    <color name="LtCream">#ddd9c3</color>
+    <color name="green">#1E9830</color>
+    <color name="circleBlue">#87cde8</color>
+
+    <!-- Home Page -->
+
+    <color name="LtGrey">#F4F4F4</color>
+    <color name="LtBlue">#53C5D3</color>
+    <color name="LtBlueHover">#449EAA</color>
+    <color name="Blue">#3492CE</color>
+    <color name="BlueHover">#1D74AA</color>
+    <color name="Red">#EF4136</color>
+    <color name="RedHover">#B72B20</color>
+    <color name="Gray">#888888</color>
+    <color name="ltGreen">#8FC846</color>
+    <color name="ltGreenHover">#7AAB3B</color>
+    <color name="TransactionListSeperator">#f2f2f2</color> 
+    
+    <color name="BlueBal">#2d7cd6</color>
+    <color name="BlueDialogText">#558ED5</color>
+    
+    
+
+    <!-- Card Entry Dialog -->
+
+    <color name="greyHint">#A6A6A6</color>
+    <color name="ltBlueHintBg">#DCE6F2</color>
+    <color name="BlueCardBtn">#00B0F0</color>
+
+    <!-- Tag List -->
+    <color name="TagListBg">#DDEEF5</color>
+    <color name="TagListText">#333333</color>
+
+    <!-- Transaction Tab -->
+    <color name="VeryLtGrey">#F9F9F4</color>
+    <color name="TabPager">#96bde9</color>
+    <color name="TabStrip">#DCE1E9</color>
+  
+   
+    <!-- Common -->
+    <color name="pageBGBlue">#257FCF</color>
+    <color name="prmaryButtonBG">#1ebde9</color>
+     <color name="textColorBlue">#257FCF</color>
+    
+
+    <!-- Top/ Footer bar -->
+    <color name="topBarBG">#2A73C5</color>
+    <color name="footerBarBG">#1b1b1b</color>
+    
+
+    <!-- Transaction Details page -->
+    <color name="txnDetailsBottomBarBG">#1b1b1b</color>
+    <color name="reedemOfferButtonBG">#1ebde9</color>
+    <color name="stateViewBG">#4289da</color>
+    <color name="BlueCallBG">#5796de</color>
+    <color name="BlueBlockTxt">#1A6EED</color>
+      
+        
+    <color name="buttonRed">#E50016</color>
+    <color name="buttonGreen">#10B640</color>
+    <color name="buttonGray">#5F5F5F</color>
+    
+    <color name="notifBGOrange">#FF7034</color>
+    <color name="notifBGRed">#E50016</color>
+    <color name="notifBGYello">#F2A83B</color>
+    
+    <!-- Spend and Offer pages -->
+    <color name="offerPagBG">#475D88</color>
+    <color name="offerTextHeighlight">#475D88</color>
+    
+    <color name="SelectorGray">#AAAAAA</color>
+
+</resources>

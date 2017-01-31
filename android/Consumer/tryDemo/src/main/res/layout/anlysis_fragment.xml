@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--
+    <ListView
+        android:id="@+id/tagLv"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:visibility="gone"
+        android:background="@color/TagListBg"
+        android:divider="#ffffff"
+        android:dividerHeight="0.5dp"
+         >
+
+    </ListView>
+    -->
+    
+   <!--  <com.widget.SlidingTabLayout
+        android:id="@+id/sliding_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BlueBal" /> -->
+
+    <LinearLayout
+        android:id="@+id/tabLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/TransactionListSeperator"
+        android:orientation="horizontal"
+        android:padding="3dp" >
+
+        <include
+            android:id="@+id/tab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            layout="@layout/analysis_tab" />
+
+         <include
+             android:id="@+id/tab2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:layout_weight="1"
+             layout="@layout/analysis_tab" />
+
+          <include
+              android:id="@+id/tab3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:layout_marginRight="5dp"
+              android:layout_weight="1.2"
+              layout="@layout/analysis_tab" />
+
+    </LinearLayout>
+
+<!-- <com.handler.CustomViewPager
+       android:id="@+id/analysis_vp"
+       android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    /> -->
+
+	<LinearLayout
+	    android:id="@+id/analysis_LL"
+	    android:layout_weight="1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loadingLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:lines="1"
+            android:text="Getting transactions..." />
+    </LinearLayout>
+
+   
+
+    <!--
+      <LinearLayout
+     android:id="@+id/footerLl"
+     android:layout_width="match_parent"
+     android:layout_height="55dp"
+     android:layout_alignParentBottom="true"
+     android:layout_gravity="bottom"
+     android:background="#1b1b1b"
+     android:orientation="vertical" >
+
+        <include layout="@layout/footer_bar" />
+    </LinearLayout>
+    -->
+
+</LinearLayout>

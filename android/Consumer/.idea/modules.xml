@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Consumer.iml" filepath="$PROJECT_DIR$/Consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/staggeredGrid/staggeredGrid.iml" filepath="$PROJECT_DIR$/staggeredGrid/staggeredGrid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tryDemo/tryDemo.iml" filepath="$PROJECT_DIR$/tryDemo/tryDemo.iml" />
+    </modules>
+  </component>
+</project>
+

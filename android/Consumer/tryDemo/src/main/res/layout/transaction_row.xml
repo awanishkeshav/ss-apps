@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp" >
+        
+         <ImageView
+            android:id="@+id/categoryImgView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            
+            android:src="@drawable/icon_category_clothing" />
+
+        <TextView
+            android:id="@+id/trNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:fontFamily="@string/light_font_family" 
+            android:textColor="#2d7cd6"
+            android:text="Arego Tea"
+            android:layout_toRightOf="@id/categoryImgView"
+            android:layout_toEndOf="@id/categoryImgView"
+            android:layout_toLeftOf="@+id/trAmountTv"
+            android:layout_toStartOf="@+id/trAmountTv"
+            
+            
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            style="@style/Wrap.Text.TintBlue" />
+        
+        <TextView
+        android:id="@+id/trDateTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif-light" 
+        android:textColor="#999999"
+        android:layout_alignLeft="@+id/trNameTv"
+        android:layout_alignStart="@+id/trNameTv"
+        android:layout_toLeftOf="@+id/trAmountTv"
+        android:layout_toStartOf="@+id/trAmountTv"
+        android:layout_below="@+id/trNameTv"
+        
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+        android:text="Tuesday, 09:00PM" 
+        style="@style/Wrap.Text.LiteGrey"/>
+        
+        <TextView
+        android:id="@+id/tagTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif-light" 
+        android:textColor="#999999"
+        android:layout_alignLeft="@+id/trNameTv"
+        android:layout_alignStart="@+id/trNameTv"
+        android:layout_toLeftOf="@+id/trAmountTv"
+        android:layout_toStartOf="@+id/trAmountTv"
+        android:layout_below="@+id/trDateTv"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+        android:text="Client site visit - Novartis" 
+        style="@style/Wrap.SmallText.LiteGrey"
+        />
+
+        <TextView
+            android:id="@+id/trAmountTv"
+            style="@style/Wrap.MidTextBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/reviewButton"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@+id/reviewButton"
+            android:layout_toStartOf="@+id/reviewButton"
+            android:fontFamily="sans-serif-light"
+            android:text="$200.00"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/reviewButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/categoryImgView"
+            android:background="#00999999"
+            android:padding="5dp"
+            android:src="@drawable/icon_feedback" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/seperator"
+        android:layout_width="match_parent"
+    	android:layout_height="1dp" 
+    	android:background="@color/seperator"
+        />
+    
+
+</LinearLayout>

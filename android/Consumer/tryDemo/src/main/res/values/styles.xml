@@ -1,0 +1,306 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- <style name="AppBaseTheme" parent="android:Theme.Light"> -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <item name="android:windowNoTitle">true</item>
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+    </style>
+
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/White</item>
+    </style>
+
+    <style name="WrapMid">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="WrapMidLarge">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="WrapSmallMid">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="WrapSmall">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="WrapLarge">
+        <item name="android:textSize">20sp</item>
+    </style>
+    
+    <style name="WrapMinExtraLargeWhite">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <style name="WrapExtraLarge">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <!-- Text Color Black Styles -->
+
+    <style name="Wrap.SmallTextBlack" parent="WrapSmall">
+        <item name="android:textColor">@color/DarkGrey</item>
+    </style>
+
+    <style name="Wrap.SmallMidTextBlack" parent="WrapSmallMid">
+        <item name="android:textColor">@color/DarkGrey</item>
+    </style>
+
+    <style name="Wrap.MidTextBlack" parent="WrapSmallMid">
+        <item name="android:textColor">@color/DarkGrey</item>
+    </style>
+    
+     <style name="Wrap.MidLargeTextBlack" parent="WrapMidLarge">
+        <item name="android:textColor">@color/DarkGrey</item>
+    </style>
+
+    <style name="Wrap.LargeTextBlack" parent="WrapLarge">
+        <item name="android:textColor">@color/DarkGrey</item>
+    </style>
+
+    <!-- ///////  Text Color Blue Styles -->
+
+    <style name="Wrap.SmallTextBlue" parent="WrapSmall">
+        <item name="android:textColor">@color/Blue</item>
+    </style>
+
+    <style name="Wrap.SmallMidTextBlue" parent="WrapSmallMid">
+        <item name="android:textColor">@color/Blue</item>
+    </style>
+
+    <style name="Wrap.MidTextBlue" parent="WrapMid">
+        <item name="android:textColor">@color/Blue</item>
+    </style>
+    
+     <style name="Wrap.MidLargeTextBlue" parent="WrapMidLarge">
+        <item name="android:textColor">@color/Blue</item>
+    </style>
+
+    <style name="Wrap.LargeTextBlue" parent="WrapLarge">
+        <item name="android:textColor">@color/Blue</item>
+    </style>
+
+    <!-- Text Color White Styles -->
+
+    <style name="Wrap.SmallTextWhite" parent="WrapSmall">
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <style name="Wrap.SmallMidTextWhite" parent="WrapSmallMid">
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <style name="Wrap.MidTextWhite" parent="WrapSmallMid">
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <style name="Wrap.LargeTextWhite" parent="WrapLarge">
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <style name="Wrap.ExtraLargeTextWhite" parent="WrapExtraLarge">
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <!-- Text Color White Styles -->
+
+    <style name="Wrap.SmallTextGrey" parent="WrapSmall">
+        <item name="android:textColor">@color/greyText</item>
+    </style>
+
+    <style name="Wrap.MidTextGrey" parent="WrapSmallMid">
+        <item name="android:textColor">@color/greyText</item>
+    </style>
+
+    <style name="Wrap.LargeTextGrey" parent="WrapLarge">
+        <item name="android:textColor">@color/greyText</item>
+    </style>
+
+    <style name="Wrap.ExtraLargeTextGrey" parent="WrapExtraLarge">
+        <item name="android:textColor">@color/greyText</item>
+    </style>
+
+    <style name="Wrap.Text.DarkGrey" parent="WrapMid">
+        <item name="android:textColor">@color/DarkGrey</item>
+    </style>
+
+    <style name="WrapSmallMid.Text.LtGrey" parent="WrapSmallMid">
+        <item name="android:textColor">@color/LtGrey</item>
+    </style>
+
+    <style name="WrapSmallMid.Text.white" parent="WrapSmallMid">
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <!-- Surendra - Defiened for Transaction Row -->
+
+    <style name="Wrap.Text.LiteGrey" parent="WrapMid">
+        <item name="android:textColor">@color/LiteGray</item>
+    </style>
+
+    <style name="Wrap.SmallText.LiteGrey" parent="WrapSmall">
+        <item name="android:textColor">@color/LiteGray</item>
+    </style>
+
+    <style name="Wrap.Text.TintBlue" parent="WrapMidLarge">
+        <item name="android:textColor">@color/TintBlue</item>
+    </style>
+
+    <!-- EditText Styles -->
+    <style name="Wrap.EditText.CardEntry" parent="WrapMid">
+        <item name="android:background">@color/ltBlueHintBg</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:textColorHint">@color/greyHint</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- EditText Styles -->
+    <style name="Wrap.EditText.LtGrey" parent="WrapMid">
+        <item name="android:background">@drawable/selector_et_ltgrey</item>
+        <item name="android:textColor">@color/LtGrey</item>
+    </style>
+
+    <!-- Button Color Styles -->
+
+    <style name="Wrap.Button.blue" parent="WrapMid">
+        <item name="android:background">@color/BlueCardBtn</item>
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <style name="Wrap.Button.LtGrey" parent="WrapMid">
+        <item name="android:background">@drawable/selector_btn_ltgrey</item>
+        <item name="android:textColor">@color/dark_greyText</item>
+    </style>
+    
+    <style name="Wrap.Button.White" parent="WrapMid">
+        <item name="android:background">@drawable/selector_button_white</item>
+        <item name="android:textColor">@color/dark_greyText</item>
+    </style>
+
+    <style name="Wrap.Button.darkGrey" parent="WrapMid">
+        <item name="android:background">@drawable/selector_grey_back</item>
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <!-- Gender  styles -->
+    <style name="lt_red_radio_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:paddingLeft">6dip</item>
+        <item name="android:paddingRight">6dip</item>
+        <item name="android:textColor">@color/gender_selector</item>
+    </style>
+
+    <!-- Transaction Details page -->
+    <style name="txnDetailDate">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <style name="txnDetailMerchantName">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <style name="txnDetailAmount">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <style name="txnDetailAddress">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <style name="txnDetailStateViewText">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    
+    <style name="txnDetailRedeemOfferButtonTitle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <style name="txnDetailTag">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <style name="txnDetailCategorySummery">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <!-- Stats View -->
+    <style name="statsViewCaption">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <style name="statsViewLabel">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <style name="customRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/layer_list_user_rating_stars</item>
+        <item name="android:minHeight">27dp</item>
+        <item name="android:maxHeight">27dp</item>
+    </style>
+    <style name="customRatingBarSmall" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/layer_list_user_rating_stars_small</item>
+        <item name="android:minHeight">17dp</item>
+        <item name="android:maxHeight">17dp</item>
+    </style>
+    <style name="customRatingBarMid" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/layer_list_user_rating_stars_mid</item>
+        <item name="android:minHeight">22dp</item>
+        <item name="android:maxHeight">22dp</item>
+    </style>
+
+    <style name="iOSBarStyle" parent="@android:style/Widget.SeekBar">
+         <item name="android:progressDrawable">@drawable/seekbar_progress</item>
+         <item name="android:thumb">@drawable/seekbar_thumb</item>
+         <item name="android:progress">50</item>
+         <item name="android:max">100</item>
+		<item name="android:minHeight">6dp</item>
+		<item name="android:maxHeight">6dp</item>
+		<item name="android:paddingLeft">12dp</item>
+		<item name="android:paddingRight">15dp</item>
+		   
+    </style>
+    
+    <style name="popupAnim">
+    <item name="android:windowEnterAnimation">@anim/fade_in</item>
+    <item name="android:windowExitAnimation">@anim/fade_out</item>
+</style>
+
+</resources>

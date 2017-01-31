@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/White" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/White"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/allowTv"
+            style="@style/Wrap.MidLargeTextBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/allowTransaction" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp" >
+
+            <TextView
+                android:id="@+id/onlineTv"
+                style="@style/Wrap.MidTextBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/Online"
+                android:textColor="@color/BlueBal" />
+
+            <TextView
+                android:id="@+id/internationalTv"
+                style="@style/Wrap.MidTextBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/inter_cb"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/international"
+                android:textColor="@color/BlueBal" />
+
+            <CheckBox
+                android:id="@+id/online_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/onlineTv"
+                android:layout_weight="2"
+                android:button="@drawable/selector_checkbox_onoff"
+                android:checked="false"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" />
+
+            <CheckBox
+                android:id="@+id/inter_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="45dp"
+                android:layout_weight="2"
+                android:button="@drawable/selector_checkbox_onoff"
+                android:checked="false"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/seperator" />
+
+        <TextView
+            style="@style/Wrap.MidTextGrey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/limits"
+            android:visibility="gone"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/dailyLl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/dailyLL"
+                layout="@layout/security_row" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/topMonthLl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/monthlyLL"
+                layout="@layout/security_row" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/View01"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/topBarBG" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/Wrap.MidLargeTextBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="sans-serif-light"
+                android:text="Manage Spend" />
+
+            <ImageView
+                android:id="@+id/addManageIv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                
+                android:src="@drawable/btn_add" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/manageLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/topBarBG" />
+
+        <RelativeLayout
+            android:id="@+id/blockedTopRl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/textVie"
+                style="@style/Wrap.MidLargeTextBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:includeFontPadding="false"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="sans-serif-light"
+                android:text="Blocked Merchants" />
+
+            <ImageView
+                android:id="@+id/addBlockedIv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:src="@drawable/btn_add"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/blockLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

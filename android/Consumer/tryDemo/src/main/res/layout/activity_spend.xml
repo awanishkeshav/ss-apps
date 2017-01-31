@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LtstGrey"
+    android:orientation="vertical" >
+    
+    <include
+        android:id="@+id/topNav"
+        layout="@layout/header_layout"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spend_top" >
+
+        <include
+            android:id="@+id/topBackLl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            layout="@layout/spend_header_layout" />
+
+       <!--  <LinearLayout
+            android:id="@+id/topBackLl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/backIv"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/icon_arrow_back_white" />
+
+            <TextView
+                android:id="@+id/restNameTv"
+                style="@style/Wrap.LargeTextWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="2dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="15dp"
+                android:paddingTop="8dp"
+                android:text="Privilege Club"
+                android:textSize="23sp" />
+
+        </LinearLayout>
+ -->
+
+        <com.consumer.widget.SlidingTabLayoutSpend
+            android:id="@+id/sliding_tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topBackLl"
+            android:layout_marginLeft="23dp"
+            android:background="@color/Transparent" />
+
+    </RelativeLayout>
+    
+    <android.support.v4.view.ViewPager
+       android:id="@+id/plan_vp"
+       android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    />
+
+</LinearLayout>

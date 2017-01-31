@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LtstGrey"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/topNav"
+        layout="@layout/header_layout" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/pageBGBlue"
+                android:orientation="vertical"
+                android:paddingEnd="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingStart="5dp" >
+
+                <TextView
+                    android:id="@+id/txnDateTv"
+                    style="@style/Wrap.SmallTextWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Today, 10.50 Am" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/merchantNameTv"
+                        style="@style/txnDetailMerchantName"
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="The Red Roof Inn" />
+
+                    <TextView
+                        android:id="@+id/txnAmountTv"
+                        style="@style/txnDetailAmount"
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="$1200.30" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight=".5"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/address_tv"
+                            style="@style/Wrap.SmallTextWhite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="University place, \nNew York, NY" />
+
+                        <RelativeLayout
+                            android:id="@+id/callMerchantView"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/circle_call_bg"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/icon_call" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:gravity="bottom"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tagTvv"
+                            style="@style/Wrap.SmallTextWhite"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="Merill Lynch Sales Trip"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/categoryTv"
+                            style="@style/Wrap.SmallTextWhite"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:gravity="right"
+                            android:text="Food &amp; Beverage" />
+
+                        <TextView
+                            android:id="@+id/amtCategoryTv"
+                            style="@style/Wrap.SmallTextWhite"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="20dp"
+                            android:gravity="right"
+                            android:text="$ 139.32, this month" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/notifLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="0dp"
+                    android:background="@color/pageBGBlue"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:id="@+id/notifHeaderLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#ff0000"
+                        android:orientation="vertical"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:id="@+id/notifTitleTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:text="Transaction Blocked!"
+                            android:textColor="#ffffff"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            android:id="@+id/notifSubtitleTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Amount Exceed from single transaction limit."
+                            android:textColor="#ffffff"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#ffffff" >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="#ffffff"
+                            android:padding="10dp" >
+
+                            <Button
+                                android:id="@+id/notifLeftButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:background="#00FF00"
+                                android:padding="10dp"
+                                android:text="Button1"
+                                android:textColor="#ffffff" />
+
+                            <Button
+                                android:id="@+id/notifRightButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="50dp"
+                                android:layout_marginStart="50dp"
+                                android:layout_toEndOf="@+id/notifLeftButton"
+                                android:layout_toRightOf="@+id/notifLeftButton"
+                                android:background="#ff0000"
+                                android:padding="10dp"
+                                android:text="Button2"
+                                android:textColor="#ffffff"
+                                android:visibility="visible" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bottomLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:background="@color/pageBGBlue"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/pageBGBlue"
+                        android:orientation="horizontal" >
+
+                        <include
+                            android:id="@+id/stateVisit"
+                            layout="@layout/state_view" />
+
+                        <View
+                            android:layout_width="3dp"
+                            android:layout_height="60dp"
+                            android:background="@color/pageBGBlue" />
+
+                        <include
+                            android:id="@+id/stateSpend"
+                            layout="@layout/state_view" />
+
+                        <View
+                            android:layout_width="3dp"
+                            android:layout_height="60dp"
+                            android:background="@color/pageBGBlue" />
+
+                        <include
+                            android:id="@+id/stateReview"
+                            layout="@layout/state_view" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tagTv"
+                        style="@style/Wrap.MidTextWhite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="3dp"
+                        android:background="@drawable/selector_blue_stateview"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Merill Lynch Sales Trip"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp" >
+
+                        <TextView
+                            android:id="@+id/offerTitleTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Get 20% off on Your Next Stay!"
+                            android:textColor="@color/Black"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/offerDescTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="center"
+                            android:text="Offer valid for all stays of 2 days or more thru October 2015"
+                            android:textColor="#222222" />
+
+                        <Button
+                            android:id="@+id/offerBtn"
+                            style="@style/txnDetailRedeemOfferButtonTitle"
+                            android:layout_width="180dp"
+                            android:layout_height="45dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@color/prmaryButtonBG"
+                            android:padding="5dp"
+                            android:text="Redeem Offer" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom"
+        android:background="#1b1b1b"
+        android:orientation="vertical" >
+
+        <include layout="@layout/footer_bar" />
+    </LinearLayout>
+
+</LinearLayout>

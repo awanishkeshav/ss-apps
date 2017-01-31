@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topLl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="7dp" >
+
+        <TextView
+            android:id="@+id/leftTv"
+            style="@style/Wrap.MidTextBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="15dp"
+            android:includeFontPadding="false"
+            android:paddingRight="10dp"
+            android:text="Monthly"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".8"
+                android:orientation="vertical" >
+
+                <SeekBar
+                    android:id="@+id/limitSb"
+                    style="@style/iOSBarStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_centerInParent="true" />
+
+                <TextView
+                    android:id="@+id/CenterBottomTv"
+                    style="@style/Wrap.SmallTextGrey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/limitSb"
+                    android:text="0" />
+            </RelativeLayout>
+
+            <Spinner
+                android:id="@+id/CategorySp"
+                android:layout_width="85dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/spinner_default_holo_light_am" />
+
+            <ImageView
+                android:id="@+id/removeIv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:src="@drawable/btn_del" />
+
+            <LinearLayout
+                android:id="@+id/leftLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/LeftBottomTv"
+                    style="@style/Wrap.SmallTextGrey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:text="TextView" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/seperator"
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/seperator" />
+
+</LinearLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab_footer"
+    android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+    android:background="@color/footerBarBG"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/seperator_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/seperator" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/tab_1Rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_footer_tab" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tab_1_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/tab_1_tv"
+                style="@style/Wrap.SmallTextWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/Tags" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tab_2Rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_footer_tab" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tab_2_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/tab_2_tv"
+                style="@style/Wrap.SmallTextWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/Share" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tab_3Rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_footer_tab" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tab_3_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/tab_3_tv"
+                style="@style/Wrap.SmallTextWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/Review" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tab_4Rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_footer_tab" >
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tab_4_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/tab_4_tv"
+                style="@style/Wrap.SmallTextWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/Report" />
+        </RelativeLayout>
+
+        <!--
+        <RelativeLayout
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1" >
+        
+	        <TextView
+	            android:id="@+id/tab_2_tv"
+	            style="@style/Wrap.SmallTextWhite"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginTop="3dp"
+	            android:layout_weight="1"
+	            android:drawableTop="@drawable/icon_32_left_arrow"
+	            android:gravity="center"
+	            android:paddingTop="8dp"
+	            android:text="@string/Share" />
+
+	        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tab_3_tv"
+            style="@style/Wrap.SmallTextWhite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/icon_32_left_arrow"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="@string/Review" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tab_4_tv"
+                style="@style/Wrap.SmallTextWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/icon_32_left_arrow"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:text="@string/Report" />
+           
+        </RelativeLayout>
+        -->
+
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/vipinjoshi/Documents/git_hub/ss-apps/android/Merchant/app/src/main/res/layout/footer_bar.xml -->

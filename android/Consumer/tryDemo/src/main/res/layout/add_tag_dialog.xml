@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:maxHeight="500dp"
+    android:minHeight="400dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/dialogTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="Tag Transaction"
+            android:textColor="@color/BlueDialogText"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/closeIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:src="@drawable/ic_cross" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/clearFilterLv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/LtstGrey"
+        android:orientation="vertical" >
+
+        <com.consumer.widget.ClearableAutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#ffffff"
+            android:hint="New tag"
+            android:padding="5dp"
+            android:textColor="@color/TagListText"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <View
+            android:id="@+id/seperator"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/BlueDialogText" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/tagLv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/LtstGrey"
+        android:divider="@color/BlueDialogText"
+        android:dividerHeight="0.5dp"
+        android:focusable="false"
+        android:visibility="visible" >
+    </ListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/seperator" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/White"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cancel_button"
+            style="@style/Wrap.Button.White"
+            android:layout_width="0dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:text="CLEAR"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/seperator" />
+
+        <Button
+            android:id="@+id/add_tag_button"
+            style="@style/Wrap.Button.White"
+            android:layout_width="0dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:text="APPLY"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

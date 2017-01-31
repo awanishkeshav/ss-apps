@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popUpLL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/popUpDetailsButtonLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/detailsLL"
+        android:background="#4F658A"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            
+            android:src="@drawable/ic_details_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="DETAILS"
+            android:textColor="@color/White"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/detailsLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/LtstGrey"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/detailsTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Minimalist design"
+            android:textColor="@color/Gray"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

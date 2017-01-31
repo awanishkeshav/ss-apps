@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@color/pageBGBlue"
+    
+    >
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        
+        android:background="#00000000" >
+
+        <ImageButton
+            android:id="@+id/previousIv"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@color/Transparent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/selector_back_arrow_white" />
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+           android:textColor="@color/White"
+            android:text="This Week" />
+        
+        <ImageButton
+            android:id="@+id/nextIv"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/Transparent"
+            android:src="@drawable/selector_next_arrow_white" />
+
+        
+
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/Users/vipinjoshi/Documents/git_hub/ss-apps/android/Merchant/app/src/main/res/layout/date_range_selector.xml -->

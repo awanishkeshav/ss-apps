@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/SelectorGray" android:state_pressed="true" />
+    <item android:drawable="@color/SelectorGray" android:state_focused="true" />
+    <item android:drawable="@color/LtGrey"/>
+
+</selector><!-- From: file:/Users/vipinjoshi/Documents/git_hub/ss-apps/android/Merchant/app/src/main/res/drawable/selector_tag_dialog_listitem.xml -->

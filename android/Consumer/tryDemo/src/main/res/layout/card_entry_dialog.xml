@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="35dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/phoneNumEt"
+            style="@style/Wrap.EditText.CardEntry"
+            android:layout_width="match_parent"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:maxLength="12"
+            android:text="" >
+
+ 			<requestFocus />
+ 		</EditText>
+        
+        <EditText
+            android:id="@+id/cardNumEt"
+            style="@style/Wrap.EditText.CardEntry"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:maxLength="4"
+            android:hint="Card Number(last 4)"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/codeEt"
+            style="@style/Wrap.EditText.CardEntry"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Activation Code"
+            android:text="" />
+
+        <Button
+            android:id="@+id/registerBtn"
+            style="@style/Wrap.Button.blue"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:text="Register My Card"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

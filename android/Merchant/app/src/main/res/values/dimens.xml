@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Card -->
+    <dimen name="CardWidth">233dp</dimen>
+    <dimen name="CardHeight">149.5dp</dimen>
+
+    <!-- Transaction Details page -->
+    <dimen name="txnDetailsOfferButtonWidth">180dp</dimen>
+    <dimen name="txnDetailsOfferButtonHight">45dp</dimen>
+
+    
+    <!-- Generic Spaces -->
+    <dimen name="space_tinest">1dp</dimen>
+    <dimen name="space_tiny">2dp</dimen>
+    <dimen name="space_small">4dp</dimen>
+    <dimen name="space_mid">8dp</dimen>
+    <dimen name="space_mid_mid">10dp</dimen>
+    <dimen name="space_mid_large">12dp</dimen>
+    <dimen name="space_large">15dp</dimen>
+    <dimen name="space_xtra_large">20dp</dimen>
+    <dimen name="space_extra_large">32dp</dimen>
+    
+</resources>

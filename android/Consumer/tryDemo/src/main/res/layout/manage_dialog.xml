@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/White"
+    >
+
+   <!--  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/Wrap.MidTextBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:background="@color/White"
+            android:gravity="center_vertical"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="Add Spent Limit"
+            android:textColor="@color/BlueCardBtn" />
+
+        <ImageView
+            android:id="@+id/closeIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp"
+            android:src="@drawable/ic_cross" />
+
+    </RelativeLayout> -->
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/dialogTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="Add Spend Limit"
+            android:textColor="@color/BlueDialogText"
+            android:textSize="19sp" />
+
+        <ImageView
+            android:id="@+id/closeIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+            android:src="@drawable/ic_cross" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEEE"
+        android:orientation="vertical"
+        android:padding="6dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/Wrap.MidTextBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Time"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/timeRg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/daillyRd"
+                style="@style/Wrap.MidTextBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:button="@drawable/selector_radiobutton_blue"
+                android:text="@string/Daily" />
+
+            <RadioButton
+                android:id="@+id/weeklyRd"
+                style="@style/Wrap.MidTextBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/selector_radiobutton_blue"
+                android:text="@string/Weekly" />
+
+            <RadioButton
+                android:id="@+id/monthlyRd"
+                style="@style/Wrap.MidTextBlack"
+                android:button="@drawable/selector_radiobutton_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Monthly" />
+        </RadioGroup>
+
+        <View
+            android:id="@+id/View01"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/seperator" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textCategory"
+                style="@style/Wrap.MidTextBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="14sp"
+                android:layout_marginTop="3dp"
+                android:text="Expense Type" />
+
+            <Spinner
+                android:id="@+id/CategorySpin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/spinner_default_holo_light_am"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/seperator" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/Wrap.MidTextBlack"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:text="Limit" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical" >
+
+                <SeekBar
+                    android:id="@+id/limitSb"
+                    style="@style/iOSBarStyle"
+                    android:layout_centerInParent="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/CenterBottomTv"
+                    style="@style/Wrap.SmallTextGrey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/limitSb"
+                    android:text="0" />
+            </RelativeLayout>
+        
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+             android:layout_marginTop="10dp"
+             android:background="@color/seperator" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+              <TextView
+                  android:id="@+id/textActioni"
+                  style="@style/Wrap.MidTextBlack"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="14sp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginTop="8dp"
+                  android:text="Action" />
+
+            <Spinner
+                android:id="@+id/actionSpin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/spinner_default_holo_light_am"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/seperator" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cancel_btn"
+            style="@style/Wrap.Button.White"
+            android:layout_width="0dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:text="CANCEL"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/seperator" />
+
+        <Button
+            android:id="@+id/ok_btn"
+            style="@style/Wrap.Button.White"
+            android:layout_width="0dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:text="OK"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+    
+</LinearLayout>

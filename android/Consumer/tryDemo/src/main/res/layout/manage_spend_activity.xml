@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LtstGrey"
+    android:orientation="vertical" >
+
+   <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_text_box"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/search_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/White"
+            android:drawableLeft="@drawable/icon_32_grey_search"
+            android:drawablePadding="2dp"
+            android:hint="Search.."
+            android:singleLine="true"
+            android:textColor="@color/DarkGrey"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/close_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:padding="5dp"
+            android:src="@drawable/icon_close" />
+    </LinearLayout> -->
+    <include
+        android:id="@+id/topNav"
+        layout="@layout/header_layout" />
+
+    <LinearLayout
+        android:id="@+id/header_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+      <!--   <include layout="@layout/tasks_tab_layout" /> -->
+      <!--  <include layout="@layout/plan_tab_layout" />  -->
+    </LinearLayout>
+    
+    <com.consumer.widget.SlidingTabLayout
+        android:id="@+id/sliding_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BlueBal" />
+    
+    <android.support.v4.view.ViewPager
+       android:id="@+id/plan_vp"
+       android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    />
+    
+ <!-- <LinearLayout
+     android:id="@+id/bottom_ll"
+     android:layout_width="match_parent"
+     android:layout_height="55dp"
+     android:layout_gravity="bottom"
+     android:background="#1b1b1b"
+     android:orientation="vertical"
+     android:visibility="gone" >
+
+        <include layout="@layout/footer_bar" />
+    </LinearLayout> -->
+   <!--  <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/White" />-->
+
+
+    <!-- <fragment
+        android:id="@+id/tranxFragment"
+        android:name="com.marchant.fragments.TranxListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+    </fragment> 
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/Black" /> -->
+
+</LinearLayout>

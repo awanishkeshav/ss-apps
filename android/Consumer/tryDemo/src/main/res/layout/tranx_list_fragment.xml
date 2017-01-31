@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!--
+    <ListView
+        android:id="@+id/tagLv"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:visibility="gone"
+        android:background="@color/TagListBg"
+        android:divider="#ffffff"
+        android:dividerHeight="0.5dp"
+         >
+
+    </ListView>
+    -->
+
+    <LinearLayout
+        android:id="@+id/loadingLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:lines="1"
+            android:text="Getting transactions..." />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/transactionLv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footerLl"
+        android:layout_below="@id/loadingLayout"
+        android:dividerHeight="0dp"
+        android:divider="@color/Transparent"
+         >
+    </ListView>
+    
+    
+
+    
+      <LinearLayout
+     android:id="@+id/footerLl"
+     android:layout_width="match_parent"
+     android:layout_height="55dp"
+     android:layout_alignParentBottom="true"
+     android:layout_gravity="bottom"
+     android:background="#1b1b1b"
+     android:orientation="vertical" >
+
+        <include layout="@layout/footer_bar" />
+    </LinearLayout>
+   
+
+</RelativeLayout>

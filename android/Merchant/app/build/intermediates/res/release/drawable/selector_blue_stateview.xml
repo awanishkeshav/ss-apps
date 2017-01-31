@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+     <item android:drawable="@color/BlueCallBG" android:state_selected="true"/>
+    <item android:drawable="@color/BlueCallBG" android:state_pressed="true"/> 
+    <item android:drawable="@color/stateViewBG"/>
+</selector><!-- From: file:/Users/vipinjoshi/Documents/git_hub/ss-apps/android/Merchant/app/src/main/res/drawable/selector_blue_stateview.xml -->

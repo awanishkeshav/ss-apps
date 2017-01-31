@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LtstGrey"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/topNav"
+        layout="@layout/header_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+
+        <LinearLayout
+            android:id="@+id/loadingLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:lines="1"
+                android:text="Searching..." />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/transactionLv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/footerLl"
+            android:layout_below="@id/loadingLayout"
+            android:divider="@color/Transparent"
+            android:dividerHeight="0dp" >
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

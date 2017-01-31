@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/clearNearbyOffersRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D4D9E3"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:lines="1"
+            android:text="Offers Near Me" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView1"
+            android:src="@drawable/icon_close" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+         >
+
+        <LinearLayout
+            android:id="@+id/loadingLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:lines="1"
+                android:text="Getting offers..." />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/offersLv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/footerLl"
+            android:layout_below="@id/loadingLayout"
+            android:divider="@color/seperator"
+            android:dividerHeight="0.5dp" >
+        </ListView>
+        
+        <TextView
+            android:id="@+id/noDataTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_centerInParent="true"
+                android:lines="1"
+                android:visibility="gone"
+                android:text="No Offers Found" />
+        
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/showNearbyOffersRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#61799C"
+        android:visibility="visible" >
+
+        <TextView
+             android:id="@+id/textview10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/White"
+            android:layout_margin="5dp"
+            android:lines="1"
+            android:text="Offers Near Me" />
+        <ImageView
+           
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            
+            android:layout_toLeftOf="@+id/textview10"
+            android:src="@drawable/ic_location_pin" />
+
+    </RelativeLayout>
+
+</LinearLayout>

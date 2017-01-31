@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/cardBgRl"
+        android:layout_width="@dimen/CardWidth"
+        android:layout_height="@dimen/CardHeight"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_creditcard_3"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/titleTV"
+            style="@style/Wrap.LargeTextBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+
+            android:ellipsize="end"
+            android:lines="1"
+            android:singleLine="false"
+            android:text="Preferred Partner"
+            android:textSize="17sp" />
+        <TextView
+            android:id="@+id/merchantNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleTV"
+            android:layout_centerHorizontal="true"
+            android:layout_alignRight="@+id/titleTV"
+            android:ellipsize="end"
+            android:lines="1"
+            android:singleLine="false"
+            android:text="Become A Partner"
+            android:textSize="12sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/subtitleTV"
+            style="@style/Wrap.LargeTextBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:singleLine="false"
+            android:text="Become A Partner"
+            android:textSize="13sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/Users/vipinjoshi/Documents/git_hub/ss-apps/android/Merchant/app/src/main/res/layout/splash_fragment_row.xml -->

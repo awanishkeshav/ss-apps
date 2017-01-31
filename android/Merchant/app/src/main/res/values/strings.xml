@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Application Strings -->
+    <string name="app_name">Privilege Club</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Main Activity -->
+    <string name="HomePage">Home Page</string>
+    <string name="SignUp">SignUp</string>
+
+    <!-- Dialog -->
+    <string name="Ok">OK</string>
+
+    <!-- Home Page -->
+
+    <string name="Home">Home</string>
+    <string name="Offers">Offers</string>
+    <string name="Alerts">Alerts</string>
+    <string name="Call">Call</string>
+    <string name="Lock">Lock</string>
+    <string name="Balance">Balance</string>
+    <string name="Availble">Availble</string>
+    <string name="showMore">Show More ..</string>
+
+    <!-- Manage Spend Page -->
+
+    <string name="Transactions">TRANSACTIONS</string>
+    <string name="Analysis">ANALYSIS</string>
+    <string name="Secure">SECURE</string>
+
+    <!-- Spend Page -->
+
+    <string name="OffersCapital">OFFERS</string>
+    <string name="AllOffers">ALL OFFERS</string>
+    <string name="NearMe">NEAR ME</string>
+    <string name="Shop">SHOP</string>
+
+    <!-- Footer Menus -->
+
+    <string name="Tags">Tags</string>
+    <string name="Share">Share</string>
+    <string name="Review">Review</string>
+    <string name="Report">Report</string>
+
+    <!-- SEcure Fragment -->
+
+    <string name="allowTransaction">Allowed Transactions</string>
+    <string name="Online">Online</string>
+    <string name="international">International</string>
+    <string name="limits">Limits</string>
+    <string name="Daily">Daily</string>
+    <string name="Weekly">Weekly</string>
+    <string name="Monthly">Monthly</string>
+    <string name="Warn">WARN</string>
+    <string name="Deny">DENY</string>
+    <string name="Travel">Travel</string>
+
+    <!-- Validations -->
+
+    <string name="Please_Enter_Username">Please Enter the Username</string>
+    <string name="Please_Enter_Lastname">Please enter valid Last Name</string>
+    <string name="Please_Enter_Country">Please Enter the Country Code</string>
+    <string name="Please_Enter_Mobile">Please Enter the Mobile Number</string>
+    <string name="Please_enter_the_email">Please enter the email address</string>
+    <string name="Please_enter_valid_email">Please enter the valid email address</string>
+    <string name="Email_Invalid">Email - Invalid</string>
+    <string name="Mobile_Invalid">Mobile number - Invalid</string>
+    <string name="password_invalid">Password should be of mininum 8 character</string>
+    <string name="password_Invalid">Password - Invalid</string>
+    <string name="conf_password_Invalid">Confirm Password - Invalid</string>
+    <string name="password_does_not">Password does not match</string>
+    <string name="Please_Enter_zipCode">Please enter valid Zip Code</string>
+
+    <!-- GCM notification dialog -->
+
+    <string name="btn_title_approve">Approve</string>
+    <string name="btn_title_deny">Deny</string>
+    <string name="title_activity_review">ReviewActivity</string>
+    <string name="title_activity_spend">SpendActivity</string>
+    <string name="title_activity_offer_details">OfferDetailsActivity</string>
+    <string name="title_activity_blank">BlankActivity</string>
+
+    <!-- fontfamily -->
+    <string name="light_font_family">sans-serif-light</string>
+    <string name="title_activity_review_list">ReviewListActivity</string>
+    <string name="img_content_desc"></string>
+
+</resources>

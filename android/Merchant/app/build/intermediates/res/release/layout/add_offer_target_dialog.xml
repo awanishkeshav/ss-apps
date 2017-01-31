@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/White"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/dialogTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="Offer Targeting"
+            android:textColor="@color/BlueDialogText"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/closeIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:src="@drawable/ic_cross" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/LtstGrey"
+            android:orientation="vertical"
+            android:padding="35dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="Type"
+                    android:textColor="@color/Black"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/typeET"
+                    style="@style/Wrap.EditText.CardEntry"
+                    android:background="@drawable/spinner_default_holo_light_am"
+                    android:layout_width="match_parent"
+                    android:hint=""
+                    android:inputType="none"
+                    android:text="" >
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="Visit"
+                    android:textColor="@color/Black"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/visitET"
+                    style="@style/Wrap.EditText.BlueBorder"
+                    android:layout_width="match_parent"
+                    android:hint="# of visits"
+                    android:inputType="number"
+                    android:text="" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="Spend"
+                    android:textColor="@color/Black"
+                    android:textSize="17sp" />
+
+                    <EditText
+                    android:id="@+id/spendET"
+                    style="@style/Wrap.EditText.BlueBorder"
+                    android:layout_width="match_parent"
+                    android:hint="Total spend"
+                    android:inputType="numberDecimal"
+                    android:text="" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/seperator" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/White"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cancel_button"
+            style="@style/Wrap.Button.White"
+            android:layout_width="0dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:text="CANCEL"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/seperator" />
+
+        <Button
+            android:id="@+id/apply_button"
+            style="@style/Wrap.Button.White"
+            android:layout_width="0dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:text="UPDATE"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/vipinjoshi/Documents/git_hub/ss-apps/android/Merchant/app/src/main/res/layout/add_offer_target_dialog.xml -->

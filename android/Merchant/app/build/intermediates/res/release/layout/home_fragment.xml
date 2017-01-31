@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pageBGBlue"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/dateRangeSelector"
+            layout="@layout/date_range_selector" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           
+            android:orientation="horizontal" >
+
+            <include
+                android:id="@+id/stateVisit"
+                layout="@layout/state_view" />
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="60dp"
+                android:background="@color/pageBGBlue" />
+
+            <include
+                android:id="@+id/stateSpend"
+                layout="@layout/state_view" />
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="60dp"
+                android:background="@color/pageBGBlue" />
+
+            <include
+                android:id="@+id/stateReview"
+                layout="@layout/state_view" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/SpendRl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/spendIv"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:background="#E8A919"
+                android:drawSelectorOnTop="true" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/spendIv"
+                android:layout_alignEnd="@id/spendIv"
+                android:layout_alignLeft="@id/spendIv"
+                android:layout_alignRight="@id/spendIv"
+                android:layout_alignStart="@id/spendIv"
+                android:layout_alignTop="@id/spendIv"
+                android:background="@drawable/spend_hover_bg" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_below="@id/spendIv" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/Wrap.ExtraLargeTextWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SERVICE" />
+
+                <TextView
+                    android:id="@+id/serviceCountTV"
+                    style="@style/Wrap.SmallMidTextWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="NO SERVICE REQUEST" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/noReviewsTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#444444"
+        android:layout_gravity="left"
+       	android:textSize="13sp"
+        android:layout_margin="10dp"
+        android:text="Getting recent reviews..."
+        android:visibility="visible" />
+
+    <ListView
+        android:id="@+id/transactionList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/Transparent"
+        android:dividerHeight="0dp" >
+    </ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom"
+        android:background="#1b1b1b"
+        android:orientation="vertical" >
+
+        <include layout="@layout/footer_bar" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/vipinjoshi/Documents/git_hub/ss-apps/android/Merchant/app/src/main/res/layout/home_fragment.xml -->

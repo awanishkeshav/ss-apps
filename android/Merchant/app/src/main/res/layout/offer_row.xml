@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/offerTitleTv"
+            style="@style/Wrap.Text.TintBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/distanceLL"
+            android:layout_toStartOf="@+id/distanceLL"
+            android:paddingEnd="10dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="10dp"
+            android:paddingStart="0dp"
+            android:text="50% Off"
+            android:textColor="@color/Blue"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/dateTv"
+            style="@style/Wrap.MidTextGrey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/offerTitleTv"
+            android:layout_alignLeft="@+id/offerTitleTv"
+            android:layout_alignRight="@+id/offerTitleTv"
+            android:layout_alignStart="@+id/offerTitleTv"
+            android:layout_below="@+id/offerTitleTv"
+            android:layout_marginTop="3dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="10dp"
+            android:paddingStart="0dp"
+            android:text="Arego Tea"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/offerStatusTv"
+            style="@style/Wrap.SmallText.LiteGrey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/offerTitleTv"
+            android:layout_alignLeft="@+id/offerTitleTv"
+            android:layout_alignRight="@+id/offerTitleTv"
+            android:layout_alignStart="@+id/offerTitleTv"
+            android:layout_below="@+id/dateTv"
+            android:paddingEnd="10dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="10dp"
+            android:paddingStart="0dp"
+            android:text="Expires 13 Aug"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:id="@+id/distanceLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingEnd="3dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingStart="3dp" >
+
+                <TextView
+                    android:id="@+id/usedCntTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/light_font_family"
+                    android:text="29"
+                    android:textColor="@color/dark_greyText"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/usedTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginStart="0dp"
+                    android:fontFamily="@string/light_font_family"
+                    android:text="USED"
+                    android:textColor="@color/dark_greyText"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#999999" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingEnd="3dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingStart="3dp" >
+
+                <TextView
+                    android:id="@+id/value$Tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="$1449"
+                    android:textColor="@color/dark_greyText"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

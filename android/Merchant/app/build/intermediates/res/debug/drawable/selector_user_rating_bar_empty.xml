@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_star_blue_large" android:state_pressed="true" android:state_window_focused="true"/>
+    <item android:drawable="@drawable/ic_star_blue_large" android:state_focused="true" android:state_window_focused="true"/>
+    <item android:drawable="@drawable/ic_star_blue_large" android:state_selected="true" android:state_window_focused="true"/>
+    <item android:drawable="@drawable/ic_star_blue_large"/>
+</selector><!-- From: file:/Users/vipinjoshi/Documents/git_hub/ss-apps/android/Merchant/app/src/main/res/drawable/selector_user_rating_bar_empty.xml -->

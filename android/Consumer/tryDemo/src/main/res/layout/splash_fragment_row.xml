@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent" 
+    >
+
+    <RelativeLayout
+        android:id="@+id/cardBgRl"
+        android:layout_width="@dimen/CardWidth"
+        android:layout_height="@dimen/CardHeight"
+        android:layout_margin="10dp"
+         android:layout_centerHorizontal="true"
+         android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_creditcard_2"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/cardIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/logo_sbi_small" />
+
+        <ImageView
+            android:id="@+id/cardBottomIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/logo_mastercard" />
+
+        <TextView
+            android:id="@+id/cardName"
+            style="@style/Wrap.LargeTextBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:singleLine="false" 
+            android:ellipsize="end" 
+            android:lines="1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="SBI Signature Card (...5678)"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

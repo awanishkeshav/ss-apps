@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/topNav"
+        layout="@layout/header_layout" />
+
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/listHeaderBG"
+        android:layout_height="wrap_content">
+
+       <TextView
+           android:id="@+id/headerTV"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="14sp"
+           android:layout_marginTop="5dp"
+           android:layout_marginBottom="5dp"
+           android:textStyle="bold"
+           android:textColor="@color/listHeaderTextColor"
+           android:layout_centerVertical="true"
+           android:layout_alignParentLeft="true"
+           android:layout_toLeftOf="@+id/addBtn"
+           android:layout_toStartOf="@id/addBtn"
+           android:layout_alignParentStart="true"
+           android:layout_marginLeft="20dp"
+           android:layout_marginStart="20dp"
+           android:text="0 Offers" />
+
+       <ImageButton
+           android:id="@+id/addBtn"
+           android:layout_width="40dp"
+           android:layout_height="30dp"
+           android:background="@color/Transparent"
+           android:layout_marginTop="5dp"
+           android:layout_marginBottom="5dp"
+           android:contentDescription="@string/img_content_desc"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentEnd="true"
+           android:layout_centerVertical="true"
+           android:layout_marginRight="10dp"
+           android:layout_marginEnd="10dp"
+           android:src="@drawable/btn_add"
+            />
+       
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <include
+        android:id="@+id/loadingLayout"
+        layout="@layout/loading_layout" />
+
+        <ListView
+            android:id="@+id/offersLV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/footerLl"
+            android:layout_below="@id/loadingLayout"
+            android:divider="@color/LiteGray"
+            android:dividerHeight="0.5dp" >
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/footerLl"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="#1b1b1b"
+            android:orientation="vertical" >
+
+            <include layout="@layout/footer_bar" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/Users/vipinjoshi/Documents/git_hub/ss-apps/android/Merchant/app/src/main/res/layout/activity_offers_list.xml -->

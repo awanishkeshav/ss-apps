@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+        
+        
+
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@string/light_font_family" 
+            android:textColor="#2d7cd6"
+            android:text="Today"
+            android:includeFontPadding="false"
+            android:layout_marginBottom="3dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            style="@style/Wrap.Text.TintBlue" />
+        
+        <TextView
+        android:id="@+id/commentTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:includeFontPadding="false"
+        android:textColor="#777777"
+        android:text="comment"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/titleTV"
+        
+        style="@style/Wrap.Text.LiteGrey"/>
+        
+        <TextView
+        android:id="@+id/noCommentTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        android:includeFontPadding="false"
+        android:textColor="#999999"
+        android:text="No Comments provided"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/titleTV"
+        
+        style="@style/Wrap.Text.LiteGrey"/>
+        
+        
+        
+
+        <include
+        android:id="@+id/avgRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        layout="@layout/rating_view"
+        android:visibility="visible" />
+
+        
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/seperator"
+        android:layout_width="match_parent"
+    	android:layout_height="0.5dp" 
+    	android:background="@color/seperator"
+        />
+    
+
+</LinearLayout>

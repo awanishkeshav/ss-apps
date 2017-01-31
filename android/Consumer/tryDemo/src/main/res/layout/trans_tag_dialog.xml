@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="300dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/dialogTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="Filter by Tag"
+            android:textColor="@color/BlueDialogText"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/closeIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+            android:src="@drawable/ic_cross" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/clearFilterLv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingEnd="12dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:text="Clear Filter"
+            android:textColor="@color/TagListText"
+            android:textStyle="italic" />
+
+        <View
+            android:id="@+id/seperator"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/BlueDialogText" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/tagLv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/LtstGrey"
+        android:divider="@color/BlueDialogText"
+        android:dividerHeight="0.5dp"
+        android:focusable="false"
+        android:visibility="visible" >
+    </ListView>
+
+</LinearLayout>

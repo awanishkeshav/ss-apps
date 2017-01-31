@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/plan_tab_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/BlueBal"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/tab_1_ll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tab_1_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/space_mid"
+            android:text="@string/Transactions"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:id="@+id/tab_1_indicator_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_tiny"
+            android:background="@color/TabPager" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_2_ll"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tab_2_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/space_mid"
+            android:text="@string/Analysis"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:id="@+id/tab_2_indicator_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_tiny"
+            android:background="@color/TabPager" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_3_ll"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tab_3_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/space_mid"
+            android:text="@string/Secure"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:id="@+id/tab_3_indicator_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_tiny"
+            android:background="@color/TabPager"  />
+    </LinearLayout>
+
+</LinearLayout>

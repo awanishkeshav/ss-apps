@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/topNav"
+        layout="@layout/header_layout" />
+
+    <include
+        android:id="@+id/dateRangeSelector"
+        layout="@layout/date_range_selector" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <include
+        android:id="@+id/loadingLayout"
+        layout="@layout/loading_layout" />
+
+        <ListView
+            android:id="@+id/transactionLv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/footerLl"
+            android:layout_below="@id/loadingLayout"
+            android:divider="@color/Transparent"
+            android:dividerHeight="0dp" >
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/footerLl"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="#1b1b1b"
+            android:orientation="vertical" >
+
+            <include layout="@layout/footer_bar" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

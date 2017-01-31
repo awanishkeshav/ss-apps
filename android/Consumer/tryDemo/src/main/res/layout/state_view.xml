@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0px"
+    android:layout_height="60dp"
+    android:layout_weight="1"
+    android:background="@drawable/selector_blue_stateview"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/stateCaption"
+        style="@style/statsViewCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/stateLable"
+        android:layout_centerHorizontal="true"
+        android:text="$238.00"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/stateLable"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon_review_white"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/avgRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/stateLable"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="3dp"
+        layout="@layout/rating_view"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/stateLable"
+        style="@style/statsViewLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="2dp"
+        android:text="Total Spend" />
+
+</RelativeLayout>

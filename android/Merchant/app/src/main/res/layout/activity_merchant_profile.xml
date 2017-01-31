@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/topNav"
+        layout="@layout/header_layout" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/Wrap.MidTextBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Business Name" />
+
+                <EditText
+                    android:id="@+id/nameET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/blue_border_bg"
+                    android:ems="10"
+                    android:singleLine="true" >
+
+                    <requestFocus />
+                </EditText>
+
+                <TextView
+                    style="@style/Wrap.MidTextBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Description" />
+
+                <EditText
+                    android:id="@+id/descET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="\n\n\n"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/blue_border_bg"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:singleLine="false" >
+
+                    <requestFocus />
+                </EditText>
+
+                <TextView
+                    style="@style/Wrap.MidTextBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Hours" />
+
+                <EditText
+                    android:id="@+id/hoursET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/blue_border_bg"
+                    android:ems="10"
+                    android:singleLine="true" >
+
+                    <requestFocus />
+                </EditText>
+
+                <Button
+                    android:id="@+id/updateButton"
+                    style="@style/txnDetailRedeemOfferButtonTitle"
+                    android:layout_width="180dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:background="@color/prmaryButtonBG"
+                    android:padding="5dp"
+                    android:text="UPDATE" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/footerLl"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom"
+        android:background="#1b1b1b"
+        android:orientation="vertical" >
+
+        <include layout="@layout/footer_bar" />
+    </LinearLayout>
+
+</LinearLayout>

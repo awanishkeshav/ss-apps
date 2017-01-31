@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:startColor="#3492CE"
+        android:endColor="#53C5D3"
+        android:angle="360"/>
+   <!--  <padding android:left="7dp"
+        android:top="7dp"
+        android:right="7dp"
+        android:bottom="7dp" /> -->
+  <!--  <corners android:topLeftRadius="12dip"
+	    android:topRightRadius="12dip"
+	    android:bottomLeftRadius="12dip"
+	    android:bottomRightRadius="12dip"/>
+     -->
+</shape>
+  <!--  android:startColor="#50708D4A"
+        android:endColor="#50708D4A" --><!-- From: file:/Users/vipinjoshi/Documents/git_hub/ss-apps/android/Merchant/app/src/main/res/drawable/blue_gardiant.xml -->

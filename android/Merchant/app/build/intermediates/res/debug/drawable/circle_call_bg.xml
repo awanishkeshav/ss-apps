@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <shape xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:shape="oval">
+    <corners android:radius="10dip"/>
+    <stroke android:color="@color/BlueCardBtn" android:width="2dip"/>
+    <solid android:color="@color/BlueCallBG"/>
+</shape> -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval" >
+    <gradient android:startColor="@color/BlueCallBG" android:endColor="@color/BlueCallBG"
+        android:angle="270"/>
+</shape><!-- From: file:/Users/vipinjoshi/Documents/git_hub/ss-apps/android/Merchant/app/src/main/res/drawable/circle_call_bg.xml -->
